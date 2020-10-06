@@ -1,0 +1,63 @@
+.breads {
+	margin-top: 4.5rem;
+	margin-bottom: 3rem;
+	@include max-screen($small_tablet) {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+	&__list {
+		font-weight: 500;
+		font-size: 1.4rem;
+		line-height: 132.4%;
+		letter-spacing: -0.02em;
+		color: $gray3;
+		margin-right: 5rem;
+		@include max-screen($small_tablet) {
+			font-size: 1.2rem;
+			width: 100%;
+		}
+	}
+
+	&__back {
+		margin-left: auto;
+		font-weight: 600;
+		font-size: 1.4rem;
+		letter-spacing: -0.02em;
+		@include max-screen($small_tablet) {
+			margin-top: 1.2rem;
+			margin-right: auto;
+			margin-left: 0px;
+		}
+		div {
+			width: 3.5rem;
+			height: 3.5rem;
+			border-radius: 50%;
+			background: $black;
+			margin-right: 1.5rem;
+			svg {
+				width: 1.2rem;
+				height: 1.2rem;
+				stroke: #fff;
+				stroke-width: 2;
+			}
+			@include max-screen($small_tablet) {
+				width: 3rem;
+				height: 3rem;
+				svg {
+					width: 1rem;
+					height: 1rem;
+				}
+			}
+		}
+	}
+
+	&__sep {
+		margin: 0px 0.8rem;
+	}
+
+	&__link {
+		&_active {
+			cursor: initial;
+		}
+	}
+}

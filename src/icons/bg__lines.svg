@@ -1,0 +1,27 @@
+<svg width="1920" height="1136" viewBox="0 0 1920 1136" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.05">
+<circle cx="1178.99" cy="506.126" r="395.744" fill="url(#paint0_linear)" stroke="white" stroke-width="0.743171"/>
+<circle cx="1219.01" cy="447.914" r="481.243" stroke="white" stroke-width="0.743171"/>
+<circle cx="1172.62" cy="380.606" r="587.663" stroke="white" stroke-width="0.743171"/>
+<circle cx="1099.85" cy="16.7797" r="1118.85" stroke="white" stroke-width="0.743171"/>
+<circle cx="1244.47" cy="254.176" r="771.395" stroke="white" stroke-width="0.743171"/>
+<circle cx="1240.84" cy="70.4442" r="1024.25" stroke="white" stroke-width="0.743171"/>
+</g>
+<g opacity="0.17">
+<circle cx="227.125" cy="220.977" r="5.45739" fill="white"/>
+<circle cx="802.88" cy="205.514" r="3.63826" fill="white"/>
+<circle cx="83.4138" cy="484.751" r="2.7287" fill="white"/>
+<circle cx="1554.18" cy="381.06" r="2.7287" fill="white"/>
+<circle cx="1700.73" cy="448.191" r="2.7287" fill="white"/>
+<circle cx="1626.04" cy="924.981" r="2.7287" fill="white"/>
+<circle cx="1712.41" cy="147.965" r="5.45739" fill="white"/>
+<circle cx="236.752" cy="728.68" r="5.45739" fill="white"/>
+<circle cx="598.228" cy="867.678" r="3.63826" fill="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="1369.01" y1="286.259" x2="1068.74" y2="682.33" gradientUnits="userSpaceOnUse">
+<stop stop-color="#625C6E"/>
+<stop offset="1" stop-color="#312C3D"/>
+</linearGradient>
+</defs>
+</svg>

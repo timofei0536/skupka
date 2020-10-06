@@ -1,0 +1,11 @@
+.filters {
+	&__wrap {
+		opacity: 0.5;
+		border: 1px solid #C4C4C4;
+		height: 6rem;
+		display: flex;
+		align-items: center;
+		padding-left: 2rem;
+		font-size: 2rem;
+	}
+}

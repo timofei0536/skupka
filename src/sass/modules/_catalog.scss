@@ -1,0 +1,99 @@
+.catalog {
+	margin: 15rem 0px;
+	@include max-screen($small_tablet) {
+		margin: 8rem 0px;
+	}
+	&__title {
+		text-align: center;
+		margin-bottom: 0.5rem;
+	}
+
+	&__sub-title {
+		text-align: center;
+		font-weight: 500;
+		font-size: 2.5rem;
+		line-height: 117.4%;
+		margin-bottom: 9rem;
+		@include max-screen($small_tablet) {
+			font-size: 1.52rem;
+			margin-bottom: 5rem;
+		}
+	}
+	&__list {
+		overflow: hidden;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0px;
+			right: -1px;
+			height: 100%;
+			width: 3px;
+			background: #fff;
+			z-index: 2;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0px;
+			bottom: -1px;
+			height: 3px;
+			width: 100%;
+			background: #fff;
+			z-index: 2;
+		}
+		.product {
+			
+			width: calc( ( 100% - 4rem * 3  ) / 4 );
+
+			@media screen and ( min-width: $large_tablet ) {
+				&:nth-child(4n-3) {
+					&:after {
+						display: block;
+					}
+				}
+			}
+
+			@media screen and ( max-width: $large_tablet ) and ( min-width: $small_tablet ) {
+				&:nth-child(3n-2) {
+					&:after {
+						display: block;
+					}
+				}
+			}
+
+
+			@media screen and ( max-width: $small_tablet ) {
+				&:nth-child(2n-1) {
+					&:after {
+						display: block;
+					}
+				}
+			}
+
+
+			@include max-screen($large_tablet) {
+				width: calc( ( 100% - 4rem * 2  ) / 3 );
+			}
+
+			@include max-screen($small_tablet) {
+				width: calc( ( 100% - 4rem * 1  ) / 2 );
+			}
+
+		}
+	}
+
+	&__btn-wrap {
+		margin-top: 7.5rem;
+		@include max-screen($small_tablet) {
+			margin-top: 4rem;
+		}
+		.btn {
+			min-width: 31.5rem;
+			@include max-screen($small_tablet) {
+				width: 100%;
+			}
+		}
+	}
+}

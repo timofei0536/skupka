@@ -1,0 +1,33 @@
+.switch {
+	font-size: 2.2rem;
+	font-weight: 500;
+	line-height: 1.3;
+	letter-spacing: -0.02em;
+	display: flex;
+	align-items: center;
+	&__toogle {
+		border: 2px solid rgba(196, 196, 196, 0.5);
+		border-radius: 100px;
+		width: 9rem;
+		height: 4rem;
+		display: flex;
+		align-items: center;
+		padding: 0.8rem;
+		margin: 0px 2rem;
+		&-round {
+			background: $black;
+			width: 2.4rem;
+			border-radius: 50%;
+			> div {
+				padding-bottom: 100%;
+			}
+		}
+	}
+
+	&__item {
+		color: #C4C4C4;
+		&_active {
+			color: $black;
+		}
+	}
+}

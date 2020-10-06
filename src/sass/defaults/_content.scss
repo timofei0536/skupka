@@ -1,0 +1,73 @@
+.content p,
+.p,
+.content li,
+.li {
+	font-size: 1.6rem;
+	font-weight: 500;
+	font-size: 1.6rem;
+	line-height: 140%;
+	letter-spacing: -0.02em;
+}
+
+.content ul,
+.content ol {
+}
+
+.content b,
+.b {
+	font-weight: bold;
+}
+
+.content strong,
+.strong {
+	font-weight: 500;
+}
+
+.content a,
+.a {
+}
+
+.h1,
+.content h1,
+.h2,
+.content h2,
+.h3,
+.content h3,
+.h4,
+.content h4,
+.h5,
+.content h5,
+.h6,
+.content h6 {
+	font-family: 'Optima';
+	font-weight: 400;
+}
+
+.h1,
+.content h1 {
+}
+
+.h2,
+.content h2 {
+	font-size: 6rem;
+	line-height: 1.03;
+	@include max-screen($small_tablet) {
+		font-size: 3.8rem;
+	}
+}
+
+.h3,
+.content h3 {
+}
+
+.h4,
+.content h4 {
+}
+
+.h5,
+.content h5 {
+}
+
+.h6,
+.content h6 {
+}

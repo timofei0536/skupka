@@ -1,0 +1,18 @@
++b.SECTION.contacts
+	+e.img.flex._center
+		img(src='/img/contacts__img.png')
+	.wrap
+		+e.wrap.flex._vertical._justify
+			+e.left
+				+e.H2.title КОНТАКТЫ
+				+e.map
+					img(src='/img/map.png')
+					+e.tomap.flex._center._vertical
+						span В яндекс<br> карты
+						+icon('arrow')
+			+e.right.flex
+				+e.ADRESS.adress Краснодар,<br> ул.Коммунаров, 107
+				+e.P.schedule Пн-Пт с 10.00 до 20.00
+				+e.A.phone(href='tel:+79651104033') +7 965 110 40 33
+				+e.A.email(href='mailto:info@vipskupka-krd.ru') info@vipskupka-krd.ru
+				+socials()

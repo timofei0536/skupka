@@ -1,0 +1,21 @@
++b.SECTION.main-screen.flex._vertical
+	.wrap.flex.vertical
+		+e.wrap.flex._justify._start
+			+e.left
+				+e.H1.title.flex._start
+					span СКУПКА
+					span ПРОДАЖА
+				+e.text
+					p швейцарских часов   
+					p ювелирных изделий 
+					p драгоценных камней 
+				+double-btn()
+			+e.right.flex
+				+e.price $ 1.000  —  $ 1.000.000
+				+e.img
+					img(src='/img/main-screen__img.png')
+					//- +icon('bg__lines','0 0 ')
+				+e.warranty.flex._justify
+					+icon('fingerprint')
+					p Гарантия<br> анонимности<br> и безопасности
+

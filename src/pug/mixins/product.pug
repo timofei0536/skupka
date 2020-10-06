@@ -1,0 +1,13 @@
+mixin product(params)
+	if params.hide
+		+b.product._hide
+	else 	
+		+b.product
+			+e.A.img(href='/product.html')
+				+e.DIV.img-ratio
+					+e.DIV.img-wrap
+						img(src='/img/product.png')
+			+e.A.name(href='/product.html')
+				H3 Rolex
+			+e.P.desk Luminor Marina Acciaio Moscow Edition 8003
+			+e.P.price $12.800

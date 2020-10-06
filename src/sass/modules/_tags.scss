@@ -1,0 +1,64 @@
+.tags {
+	margin: 2rem 0px;
+	margin-bottom: 1rem;
+	
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: -0.02em;
+		margin-right: 2.7rem;
+		margin-bottom: 1.5rem;
+		display: flex;
+		align-items: center;
+		&-close {
+			width: 1.2rem;
+			height: 1.2rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			margin-left: 1rem;
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;		
+				height: 1px;
+				background: $black;
+				transform: rotate(45deg);
+			}
+
+			&::after {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+
+	&__wrap {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__throw {
+		background: rgba(196, 196, 196, 0.4);
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 3rem;
+		padding: 0px 1rem;
+		display: flex;
+		align-items: center;
+		margin-bottom: 1.5rem;
+		svg {
+			width: 1.2rem;
+			height: 1.2rem;
+			margin-left: 1rem;
+		}
+	}
+
+}

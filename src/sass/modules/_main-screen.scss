@@ -1,0 +1,177 @@
+.main-screen {
+	background: $primary;
+	color: $white;
+	min-height: 100vh;
+	margin-top: $header-height * -1;
+	padding-top: $header-height;
+	letter-spacing: -0.02em;
+	@include max-screen($large_tablet) {
+		min-height: 1px;
+	}
+
+	@include max-screen($small_tablet) {
+		padding-top: $header-height-mobile;
+		margin-top: $header-height-mobile * -1;
+	}
+	&__wrap {
+		margin-bottom: $header-height * -1;
+		width: 100%;
+		@include max-screen($large_tablet) {
+			padding-top: 10rem;
+			padding-bottom: 12rem;
+			margin-bottom: 0rem;
+		}
+		@include max-screen($small_tablet) {
+			flex-direction: column-reverse;
+			padding-top: 4rem;
+			padding-bottom: 8rem;
+		}
+	}
+	&__title {
+		font-size: 6.2rem;
+		line-height: 1;
+		letter-spacing: 0px;
+		flex-direction: column;
+		margin-bottom: 5rem;
+		font-family: "Optima";
+		font-weight: 400;
+		@include max-screen($small_tablet) {
+			font-size: 4rem;
+			margin-bottom: 2rem;
+		}
+		span {
+			margin-bottom: 3px;
+			&:nth-child(1) {
+				position: relative;
+				color: #E7E7E7;
+				&::before {
+					content: '';
+					position: absolute;
+					left: calc( 100% + 3rem );
+					width: 13.5rem;
+					height: 0.3rem;
+					background: #E7E7E7;
+					top: calc( 50% - 0.2rem );
+					@include max-screen($small_tablet) {
+						width: 11rem;
+					}
+				}
+			}
+			@for $i from 2 through 3 {
+				&:nth-child(#{$i}) {
+					margin-left: 9.8rem * ( $i - 1 );
+				}
+			}
+		}
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 2.5rem;
+		line-height: 160%;
+		margin-bottom: 14.5rem;
+		@media screen and ( max-height: 790px ) {
+			margin-bottom: 10rem;
+		}
+
+		@include max-screen($small_tablet) {
+			font-size: 1.8rem;
+			margin-bottom: 5rem;
+		}
+		p {
+			@for $i from 2 through 5 {
+				&:nth-child(#{$i}) {
+					margin-left: 2.3rem * ( $i - 1 );
+				}
+			}
+		}
+	}
+
+	&__left {
+		width: 44rem;
+		@include max-screen($small_tablet) {
+			width: 100%;
+		}
+	}
+
+	&__right {
+		position: relative;
+		max-height: 70rem;
+		z-index: 1;
+		width: calc( 100% - 44rem );
+		@include max-screen($large_tablet) {
+			max-height: 10000px;
+			margin-bottom: 2rem;
+		}
+
+		@include max-screen($small_tablet) {
+			width: 100%;
+		}
+	}
+
+	&__price {
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 130%;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		@include max-screen($small_tablet) {
+			font-size: 1.4rem;
+			top: auto;
+			bottom: 10%;
+			right: auto;
+			left: 5%;
+		}
+	}
+
+
+	&__warranty {
+		background: rgba(255, 255, 255, 0.07);	
+		width: 17rem;
+		padding: 3rem;
+		padding-left: 2.5rem;
+		height: 44rem;
+		flex-direction: column;
+		position: absolute;
+		top: calc( 2rem + 8.5rem );
+		right: 0px;
+		z-index: -1;
+		font-weight: 500;
+		font-size: 1.4rem;
+		line-height: 152.4%;
+		svg {
+			fill: #fff;
+			width: 2.5rem;
+			height: 3rem;
+			margin-left: auto;
+		}
+
+		@include max-screen($small_tablet) {
+			top: 0px;
+			height: 90%;
+			font-size: 1.2rem;
+			padding: 2rem;
+			width: 14rem;
+		}
+	}
+
+
+	&__img {
+		max-width: 57rem;
+		margin-top: -4rem;
+		pointer-events: none;
+		margin-right: 7rem;
+		margin-left: auto;
+		@media screen and ( max-height: 790px ) {
+			max-width: 50rem;
+		}
+		svg {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			z-index: 2;
+		}
+	}
+
+}

@@ -1,0 +1,39 @@
+.footer {
+	font-size: 1.6rem;
+	line-height: 130%;
+	letter-spacing: -0.02em;
+	padding-bottom: 5rem;
+
+
+	&__wrap {
+		border-top: 1px solid #c4c4c4;
+		padding-top: 5rem;
+		.footer_home & {
+			padding-top: 0px;
+			border-top: 0px;
+			flex-direction: column;
+		}
+
+		.footer_product & {
+			@include max-screen($large_tablet) {
+				border-top: none;
+			}
+		}
+	}
+
+	&__conf {
+		.footer_home & {
+			text-decoration: underline;
+			margin-bottom: 2.8rem;
+		}
+
+	}
+
+	&__logo {
+		width: 5.5rem;
+		margin-bottom: 0.5rem;
+		.footer_home & {
+			margin-top: 5rem;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+mixin btn(params)
+	if params.type == 'link'
+		+b.A.btn(href!=attributes.href)(class!=attributes.class) 
+			if params.icon == 'burger'
+				+e.menu.flex
+
+			if params.icon == 'plus'
+				+e.__plus.flex._vertical._center
+				+e.round
+			| #{params.text}
+
+	else  
+		+b.BUTTON.btn(href!=attributes.href)(class!=attributes.class) 
+			if params.icon == 'burger'
+				+e.menu.flex
+
+			if params.icon == 'plus'
+				+e.__plus.flex._vertical._center
+				+e.round
+			| #{params.text}

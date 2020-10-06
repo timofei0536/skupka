@@ -1,0 +1,20 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Main page';
+	- footer = {class:"footer_home",devs:true};
+
+block content
+	include ../layouts/main-screen
+	include ../layouts/brands
+	include ../layouts/features
+	include ../layouts/estimate
+	include ../layouts/about
+	include ../layouts/catalog
+	include ../layouts/contacts
+	include ../layouts/callback
+
+
+
+
+

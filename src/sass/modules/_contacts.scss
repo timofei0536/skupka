@@ -1,0 +1,135 @@
+.contacts {
+	background: $primary;
+	color: $white;
+	padding: 16rem 0px;
+	position: relative;
+	@include max-screen($small_tablet) {
+		padding: 8rem 0px;
+		padding-bottom: calc( 8rem + 4rem );
+	}
+
+	&__title {
+		display: none;
+	}
+
+	&__left {
+		width: 58rem;
+		@include max-screen($large_tablet) {
+			width: 40rem;
+		}
+		@include max-screen($small_tablet) {
+			width: 100%;
+			margin-bottom: 5rem;
+		}
+	}
+
+	&__right {
+		flex-direction: column;
+		width: calc( 100% - 58rem - 10rem );
+		@include max-screen($large_tablet) {
+			width: calc( 100% - 40rem - 8rem );
+		}
+		@include max-screen($small_tablet) {
+			width: 100%;
+		}
+	}
+
+	&__adress {
+		font-size: 4rem;
+		line-height: 1.12;
+		letter-spacing: -0.02em;
+		font-family: "Optima";
+		margin-bottom: 2.5rem;
+		@include max-screen($small_tablet) {
+			font-size: 3rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	&__schedule {
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 1.25;
+		letter-spacing: -0.02em;
+		margin-bottom: 13rem;
+		@include max-screen($large_tablet) {
+			margin-bottom: 5rem;
+		}
+		@include max-screen($small_tablet) {
+			font-size: 1.6rem;
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__phone {
+		font-family: 'Optima';
+		font-size: 6rem;
+		line-height: 1.17;
+		letter-spacing: -0.05em;
+		margin-bottom: 3.3rem;
+		@include max-screen($small_tablet) {
+			font-size: 5rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	&__map {
+		position: relative;
+		max-width: 70rem;
+	}
+
+	&__email {
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 117.4%;
+		letter-spacing: -0.02em;
+		margin-bottom: 6.5rem;
+		@include max-screen($small_tablet) {
+			margin-bottom: 3.5rem;
+		}
+	}
+
+
+	&__tomap {
+		width: 18rem;
+		height: 18rem;
+		flex-direction: column;
+		background: #625B75;
+		border-radius: 50%;
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		font-weight: 500;
+		font-size: 1.4rem;
+		line-height: 1.21;
+		text-align: center;
+		letter-spacing: -0.04em;
+		@include max-screen($large_tablet) {
+			width: 15rem;
+			height: 15rem;
+		}
+		svg {
+			width: 1.2rem;
+			stroke: #fff;
+			stroke-width: 2.5px;
+			margin-top: 1.5rem;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		left: 0px;
+		width: 100%;
+		bottom: -11rem;
+		@include max-screen($small_tablet) {
+			bottom: -8rem;
+		}
+		img {
+			max-width: 23rem;
+			@include max-screen($small_tablet) {
+				width: 18rem;
+			}
+		}
+	}
+
+}

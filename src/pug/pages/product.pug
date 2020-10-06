@@ -1,0 +1,9 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Product';
+	- footer = {class:"footer_product"};
+
+block content
+	include ../layouts/breads
+	include ../layouts/product-page
