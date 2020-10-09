@@ -6,6 +6,7 @@
 		padding: 8rem 0px;
 	}
 	&__title {
+			margin-bottom: 3rem;
 		span {
 			display: block;
 			&:last-child {
@@ -19,7 +20,6 @@
 
 		@include max-screen($small_tablet) {
 			font-size: 3.8rem !important;
-			margin-bottom: 3rem;
 		}
 	}
 

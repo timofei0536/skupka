@@ -1,0 +1,58 @@
+.modals {
+	display: flex;
+	padding: 10rem;
+	background: #fff;
+	max-width: calc( 100% - 30px );
+	margin: 3rem auto;
+	position: relative;
+	&_thank {
+		width: calc( 45rem + 10rem * 2 );
+	}
+
+	&_privacy {
+		width: calc( 85rem + 10rem * 2 );
+	}
+
+
+	&_callback {
+		width: calc( 75rem + 10rem * 2 );
+	}
+
+	&_menu {
+		background: $primary;
+		color: #fff;
+		max-width: 100%;
+		margin: 0px;
+		width: 100%;
+		height: 100%;
+	}
+
+
+	&__close {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+		width: 3rem;
+		height: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			width: 2rem;
+			height: 2px;
+			background: $black;
+			transform: rotate(45deg);
+			.modals_menu & {
+				background:  #fff;
+			}
+		}
+
+		&::before {
+			transform: rotate(-45deg);
+		}
+	}
+}

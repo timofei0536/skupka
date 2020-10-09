@@ -1,0 +1,12 @@
+.privacy {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__title {
+		font-weight: 500 !important;
+		font-size: 2.5rem !important;
+		line-height: 117.4% !important;
+		letter-spacing: -0.02em !important;
+		margin-bottom: 5rem;
+	}
+}

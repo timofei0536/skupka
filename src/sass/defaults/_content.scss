@@ -7,6 +7,10 @@
 	font-size: 1.6rem;
 	line-height: 140%;
 	letter-spacing: -0.02em;
+	margin-bottom: 2.4rem;
+	&:last-child {
+		margin-bottom: 0px;
+	}
 }
 
 .content ul,

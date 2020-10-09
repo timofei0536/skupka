@@ -9,6 +9,16 @@ mixin btn(params)
 				+e.round
 			| #{params.text}
 
+	else if params.type == 'label'
+		+b.LABEL.btn(class!=attributes.class for!=attributes.for) 
+			if params.icon == 'burger'
+				+e.menu.flex
+
+			if params.icon == 'plus'
+				+e.__plus.flex._vertical._center
+				+e.round
+			| #{params.text}
+
 	else  
 		+b.BUTTON.btn(href!=attributes.href)(class!=attributes.class) 
 			if params.icon == 'burger'
