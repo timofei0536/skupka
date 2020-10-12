@@ -1,6 +1,10 @@
 import { defaults } from "./modules/defaults";
 import { forms } from "./modules/forms";
 import { modals } from "./modules/modals";
+import { toogle } from "./modules/toogle";
+import { brandsList } from "./modules/brands-list";
+import { checkboxs } from "./modules/checkboxs";
+import { tags } from "./modules/tags";
 import { config } from "./config";
 
 var App = () => {};

@@ -1,11 +1,62 @@
 .filters {
 	&__wrap {
-		opacity: 0.5;
-		border: 1px solid #C4C4C4;
+		border: 1px solid rgba(196,196,196,0.5);
 		height: 6rem;
 		display: flex;
+	}
+
+	&__item {
+		border-right: 1px solid rgba(196,196,196,0.5);
+		display: flex;
+		&_currencyes {
+			flex-grow: 1;
+		}
+	}
+
+	&__popup {
+		flex-grow: 1;
+		display: flex;
 		align-items: center;
-		padding-left: 2rem;
-		font-size: 2rem;
+		font-weight: 600;
+		font-size: 1.6rem;
+		letter-spacing: -0.02em;
+		padding: 0px 4rem;
+		svg {
+			width: 1rem;
+			opacity: 1;
+			margin-left: 1rem;
+		}
+	}
+
+	&__currencyes {
+		display: flex;
+		flex-grow: 1;
+		padding: 0rem 3rem;
+		white-space: nowrap;
+	}
+
+	&__currency {
+		font-size: 1.4rem;
+		opacity: 0.5;
+		display: flex;
+		align-items: center;
+		flex-grow: 1;
+		margin: 0px 1.5rem;
+		cursor: pointer;
+		position: relative;
+		padding: 0px 0.5rem;
+		justify-content: center;
+		&_active {
+			opacity: 1;
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: -1px;
+				width: 100%;
+				height: 2px;
+				left: 0px;
+				background: $black;
+			}
+		}
 	}
 }

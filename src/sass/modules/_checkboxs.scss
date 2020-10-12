@@ -1,0 +1,79 @@
+.checkboxs {
+	width: 100%;
+	&__lists {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__list {
+		&-title {
+			font-weight: 600;
+			font-size: 1.6rem;
+			line-height: 132.4%;
+			margin-bottom: 1.8rem;
+		}
+
+		@include max-screen($small-tablet) {
+			width: 50%;
+			margin-bottom: 2rem;
+		}
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		font-weight: 500;
+		font-size: 1.4rem;
+		line-height: 132.4%;
+		margin-bottom: 1.8rem;
+		transition: all 0.3s;
+		cursor: pointer;
+		&:hover {
+			opacity: 0.7;
+		}
+		&-check {
+			border: 1px solid #111111;
+			width: 1.8rem;
+			height: 1.8rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: 0.8rem;
+			cursor: pointer;
+			svg {
+				fill: none;
+				stroke: transparent;
+				transition: stroke 0.3s;
+				.checkboxs__item_active & {
+					stroke: $black;
+				}
+			}
+		}
+	}
+
+	&__btns {
+		margin-top: auto;
+		display: flex;
+		font-size: 1.2rem;
+		margin-top: 5rem;
+		@include max-screen($small-tablet) {
+			margin-top: 3rem;
+		}
+		.btn {
+			font-size: 1.2rem;
+			line-height: 6rem;
+		}
+	}
+
+	&__throw {
+		font-size: 1.2rem;
+		font-weight: 600;
+		padding: 2rem 4.5rem;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		transition: opacity 0.3s;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}

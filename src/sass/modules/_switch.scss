@@ -18,15 +18,24 @@
 			background: $black;
 			width: 2.4rem;
 			border-radius: 50%;
+			.switch__toogle_right & {
+				margin-left: auto;
+			}
 			> div {
 				padding-bottom: 100%;
 			}
 		}
+
 	}
 
 	&__item {
 		color: #C4C4C4;
+		transition: all 0.3s;
+		cursor: pointer;
 		&_active {
+			color: $black;
+		}
+		&:hover {
 			color: $black;
 		}
 	}

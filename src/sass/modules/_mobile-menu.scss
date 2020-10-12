@@ -1,4 +1,6 @@
 .mobile-menu {
+	width: 100%;
+	padding-top: 3rem;
 	&__list {
 		display: flex;
 		flex-direction: column;
@@ -10,5 +12,8 @@
 		line-height: 140%; 
 		letter-spacing: -0.02em;
 		margin-bottom: 1.5rem;
+		@include max-screen($small_tablet) {
+			font-size: 1.8rem;
+		}
 	}
 }

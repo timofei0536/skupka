@@ -1,7 +1,23 @@
 +b.SECTION.filters
 	.wrap
 		+e.wrap
-			a.js-modal(href='#thank') Спасибо!
-			a.js-modal(href='#privacy') Конфендициальность
-			a.js-modal(href='#callback') Форма
-			a.js-modal(href='#menu') menu
+			+e.item
+				+e.A.popup.js-modal(href='#checkboxs')
+					span Фильтры
+					+icon('filtersPopup')
+			+e.item
+				+e.A.popup.js-modal(href='#brands')
+					span Бренды
+					+icon('filtersPopup')
+			+e.item._currencyes
+				+e.currencyes
+					+e.currency._active $ (US)
+					+e.currency ₽ (RU)
+					+e.currency € (EUR)
+			+e.item
+				//- +e.A.popup.js-modal(href='#flters')
+				+e.SPAN.popup
+					span Сначала новые
+					+icon('filtersPopup')
+
+

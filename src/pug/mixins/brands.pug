@@ -1,0 +1,57 @@
+mixin brands(params)
+	+b.brands-list
+		.wrap
+			if !params.filters
+				+e.title Списко брендов,<br> с которыми мы<br> работаем
+			+e.lists
+				+e.list
+					+e.link._active A. Lange and Sohne
+					+e.link B.R.M.
+					+e.link Blancpain
+					+e.link BOUCHERON
+					+e.link Bovet
+					+e.link Breguet
+					+e.link Breitling
+					+e.link Bulgari
+					+e.link Cartier
+					+e.link Bulgari
+					+e.link Arnold & Son
+					+e.link Audemars Piguet
+				+e.list
+					+e.link Cvstos
+					+e.link DAMIANI
+					+e.link Daniel Roth
+					+e.link De Bethune
+					+e.link de Grisogono
+					+e.link F.P. Journe
+					+e.link Franck Muller
+					+e.link Gerald Genta
+					+e.link Girard-Perregaux
+					+e.link Glashütte Original
+					+e.link Graff
+				+e.list
+					+e.link Jaeger LeCoultre
+					+e.link Jaquet Droz
+					+e.link JORG HYSEK
+					+e.link LOUIS MOINET
+					+e.link Maurice Lacroix
+					+e.link OMEGA
+					+e.link Panerai
+					+e.link Parmigiani
+					+e.link Patek Philippe
+					+e.link Piaget
+					+e.link Graham
+				+e.list
+					+e.link TAG Heuer
+					+e.link TUDOR
+					+e.link Romain Jerome
+					+e.link Ulysse Nardin
+					+e.link Urwerk
+					+e.link Vacheron Constantin
+					+e.link Zenith
+			+e.btns
+				if params.filters
+					+btn({text:'Применить'}).btn_empty.btn_black
+					+e.throw Сбросить
+				else 
+					+btn({text:'Понятно'}).btn_empty.btn_onbg

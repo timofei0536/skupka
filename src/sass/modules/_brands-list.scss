@@ -1,0 +1,77 @@
+.brands-list {
+	width: 100%;
+
+	&__title {
+		font-weight: 500;
+		font-size: 2.5rem;
+		line-height: 130%;
+		letter-spacing: -0.02em;
+		margin-bottom: 5rem;
+		z-index: -1;
+	}
+	&__lists {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__list {
+		margin-right: 5rem;
+		@include max-screen($large-tablet) {
+			width: 50%;
+			margin-right: 0px;
+			margin-bottom: 3rem;
+		}
+
+		@include max-screen($small_tablet) {
+			width: calc( 50% - 1rem );
+		}
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+
+	&__link {
+		font-size: 1.4rem;
+		line-height: 156%;
+		margin-bottom: 2px;
+		transition: all 0.3s;
+		cursor: pointer;
+		&_active {
+			font-weight: 700;	
+		}
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+
+	&__btns {
+		margin-top: 5rem;
+		display: flex;
+		font-size: 1.2rem;
+		.btn {
+			font-size: 1.2rem;
+			line-height: 6rem;
+			@include max-screen($large-tablet) {
+				width: 50%;
+			}
+		}
+
+		@include max-screen($large-tablet) {
+			margin-top: 2rem;
+		}
+	}
+
+	&__throw {
+		font-size: 1.2rem;
+		font-weight: 600;
+		padding: 2rem 4.5rem;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		transition: opacity 0.3s;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
