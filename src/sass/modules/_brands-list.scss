@@ -36,11 +36,11 @@
 		line-height: 156%;
 		margin-bottom: 2px;
 		transition: all 0.3s;
-		cursor: pointer;
 		&_active {
 			font-weight: 700;	
 		}
-		&:hover {
+		#brands &:hover {
+			cursor: pointer;
 			opacity: 0.5;
 		}
 	}

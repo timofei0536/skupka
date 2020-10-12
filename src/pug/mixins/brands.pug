@@ -51,7 +51,7 @@ mixin brands(params)
 					+e.link Zenith
 			+e.btns
 				if params.filters
-					+btn({text:'Применить'}).btn_empty.btn_black
+					+btn({text:'Применить'}).btn_empty.btn_black.close.js-close-modal
 					+e.throw Сбросить
 				else 
-					+btn({text:'Понятно'}).btn_empty.btn_onbg
+					+btn({text:'Понятно'}).btn_empty.btn_onbg.close.js-close-modal

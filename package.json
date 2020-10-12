@@ -49,6 +49,7 @@
     "inputmasks": "^5.0.4",
     "jquery-validation": "^1.19.1",
     "magnific-popup": "^1.1.0",
+    "nouislider": "^14.6.2",
     "sass-mediaqueries": "^1.6.1"
   }
 }

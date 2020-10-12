@@ -9,6 +9,10 @@
 				+e.A.popup.js-modal(href='#brands')
 					span Бренды
 					+icon('filtersPopup')
+			+e.item._price
+				+b.price(id='price')
+				input(type="text" id='price1')
+				input(type="text" id='price2')
 			+e.item._currencyes
 				+e.currencyes
 					+e.currency._active $ (US)
