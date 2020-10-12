@@ -14,7 +14,7 @@
 		}
 		span {
 			display: block;
-			@for $i from 2 through 5 {
+			@for $i from 2 through 8 {
 				&:nth-child(#{$i}) {
 					margin-left: 6.5rem * ( $i - 1 );
 				}

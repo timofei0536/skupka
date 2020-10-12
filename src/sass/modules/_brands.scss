@@ -1,6 +1,9 @@
 .brands {
 	padding-top: 19rem;
 	position: relative;
+	@include max-screen($large-tablet) {
+		padding-top: 12rem;
+	}
 	@include max-screen($small_tablet) {
 		padding-top: 8rem;
 		padding-bottom: 8rem;

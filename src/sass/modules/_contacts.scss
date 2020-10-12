@@ -104,14 +104,23 @@
 		line-height: 1.21;
 		text-align: center;
 		letter-spacing: -0.04em;
+		transition: all 0.5s;
 		@include max-screen($large_tablet) {
 			width: 15rem;
 			height: 15rem;
+		}
+		&:hover {
+			background: #fff;
+			color: $primary;
+			svg {
+				stroke: $primary;
+			}
 		}
 		svg {
 			width: 1.2rem;
 			stroke: #fff;
 			stroke-width: 2.5px;
+			transition: all 0.5s;
 			margin-top: 1.5rem;
 		}
 	}

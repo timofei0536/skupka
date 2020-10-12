@@ -10,13 +10,22 @@
 			align-items: flex-start;
 			.switch {
 				flex-wrap: nowrap;
-				margin: 2rem 0px;
+				margin: 0rem 0.2rem;
 				&__item {
 					width: calc( ( 100% - 9rem ) / 2 );
-					font-size: 1.6rem;
+					font-size: 1.4rem;
+					letter-spacing: -0.04em;
 					&:last-child {
 						text-align: right;
 					}
+
+					&:nth-child(3) {
+						font-size: 1.3rem;
+					}
+				}
+				&__toogle {
+					width: 7rem;
+					height: 3.5rem;
 				}
 			}
 		}
