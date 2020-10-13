@@ -7,6 +7,7 @@ import { checkboxs } from "./modules/checkboxs";
 import { tags } from "./modules/tags";
 import { price } from "./modules/price";
 import { anchors } from "./modules/anchors";
+import { currencyes } from "./modules/currencyes";
 import { config } from "./config";
 
 var App = () => {};

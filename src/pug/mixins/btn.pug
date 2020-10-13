@@ -18,6 +18,10 @@ mixin btn(params)
 				+e.__plus.flex._vertical._center
 				+e.round
 			+e.SPAN.text #{params.text}
+			if params.file
+				input(type='file',style='display:none')
+
+
 
 	else  
 		+b.BUTTON.btn(href!=attributes.href)(class!=attributes.class) 

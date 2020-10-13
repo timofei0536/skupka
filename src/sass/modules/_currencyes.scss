@@ -1,0 +1,47 @@
+.currencyes {
+	flex-grow: 1;
+	padding: 0rem 3rem;
+	@include max-screen($small-tablet) {
+		padding: 0px;
+	}
+
+	&__item {
+		font-size: 1.4rem;
+		opacity: 0.5;
+		flex-grow: 1;
+		margin: 0px 1.5rem;
+		cursor: pointer;
+		position: relative;
+		padding: 0px 0.5rem;
+		justify-content: center;
+		transition: all 0.3s;
+		@include max-screen($small-tablet) {
+			margin: 0px 0.5rem;
+			font-size: 1rem;
+			padding: 0px;
+		}
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: -1px;
+				width: 0%;
+				height: 2px;
+				left: 50%;
+				transform: translate(-50%,0);
+				background: $black;
+				opacity: 0;
+				transition: opacity 0.3s, width 0.3s;
+			}
+		&_active {
+			opacity: 1;
+			&::before {
+				opacity: 1;
+				width: 100%;
+			}
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}

@@ -1,11 +1,12 @@
 .brands {
 	padding-top: 19rem;
 	position: relative;
+	overflow: hidden;
 	@include max-screen($large-tablet) {
 		padding-top: 12rem;
 	}
 	@include max-screen($small_tablet) {
-		padding-top: 8rem;
+		padding-top: 12rem;
 		padding-bottom: 8rem;
 	}
 	.wrap {
@@ -50,7 +51,20 @@
 		width: 100%;
 		top: 14rem;
 		@include max-screen($large_tablet) {
-			display: none;
+			width: 124%;
+			left: -12%;
+		}
+
+		@include max-screen($large_tablet) {
+			top: 5rem;
+			left: -60%;
+			width: 220%;
+		}
+
+		@include max-screen($large_mobile) {
+			top: 5rem;
+			left: -140%;
+			width: 280%;
 		}
 	}
 

@@ -1,10 +1,5 @@
 .checkboxs {
 	width: 100%;
-	&__lists {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-	}
 	&__list {
 		&-title {
 			font-weight: 600;
@@ -19,8 +14,6 @@
 		}
 	}
 	&__item {
-		display: flex;
-		align-items: center;
 		font-weight: 500;
 		font-size: 1.4rem;
 		line-height: 132.4%;
@@ -52,7 +45,6 @@
 
 	&__btns {
 		margin-top: auto;
-		display: flex;
 		font-size: 1.2rem;
 		margin-top: 5rem;
 		@include max-screen($small-tablet) {
@@ -69,8 +61,6 @@
 		font-weight: 600;
 		padding: 2rem 4.5rem;
 		cursor: pointer;
-		display: flex;
-		align-items: center;
 		transition: opacity 0.3s;
 		&:hover {
 			opacity: 0.7;

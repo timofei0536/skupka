@@ -4,7 +4,7 @@ import { config } from "../config";
 
 var forms = {
 	mask: () => {
-		var selector = document.querySelectorAll("input[name='phone']");
+		var selector = document.querySelectorAll(".phone-mask");
 
 		var im = new Inputmask({
 			mask: "+7 (999) 999-99-99",

@@ -1,24 +1,24 @@
 +b.checkboxs
 	.wrap
-		+e.lists
+		+e.lists.flex._justify
 			+e.list
 				+e.list-title Сортировка товара
-				+e.item._active
+				+e.item.flex._vertical._active
 					+e.item-check
 						+icon('check')
 					span Сначала новые
-				+e.item
+				+e.item.flex._vertical
 					+e.item-check
 						+icon('check')
 					span По цене вниз
-				+e.item
+				+e.item.flex._vertical
 					+e.item-check
 						+icon('check')
 					span По цене вниз
-				+e.item
+				+e.item.flex._vertical
 					+e.item-check
 						+icon('check')
 					span По акциям
-		+e.btns
+		+e.btns.flex
 			+btn({text:'Применить'}).btn_empty.btn_black.close.js-close-modal
-			+e.throw Сбросить
+			+e.throw.flex._vertical Сбросить

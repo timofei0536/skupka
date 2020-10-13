@@ -91,8 +91,13 @@
 			@include max-screen($small_tablet) {
 				margin-bottom: 0px !important;
 				order: 2;
+				margin-top: -12.5rem !important;
+			}
+
+			@include max-screen($large-mobile) {
 				margin-top: -20rem !important;
 			}
+
 		}
 
 		&_third {

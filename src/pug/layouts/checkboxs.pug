@@ -1,38 +1,38 @@
 +b.checkboxs
 	.wrap
-		+e.lists
+		+e.lists.flex._justify
 			+e.list
 				+e.list-title Коллекция
-				+e.item._active
+				+e.item._active.flex._vertical
 					+e.item-check
 						+icon('check')
 					span Мужские
-				+e.item
+				+e.item.flex._vertical
 					+e.item-check
 						+icon('check')
 					span Женские
 			+e.list
 				+e.list-title Состояние
-				+e.item
+				+e.item.flex._vertical
 					+e.item-check
 						+icon('check')
 					span Новые
-				+e.item
+				+e.item.flex._vertical
 					+e.item-check
 						+icon('check')
 					span С пробегом
 			+e.list
 				+e.list-title Акции
-				+e.item
+				+e.item.flex._vertical
 					+e.item-check
 						+icon('check')
 					span Скидка
 			+e.list
 				+e.list-title Референс
-				+e.item
+				+e.item.flex._vertical
 					+e.item-check
 						+icon('check')
 					span Limited Edition
-		+e.btns
+		+e.btns.flex
 			+btn({text:'Применить'}).btn_empty.btn_black.close.js-close-modal
-			+e.throw Сбросить
+			+e.throw.flex._vertical Сбросить

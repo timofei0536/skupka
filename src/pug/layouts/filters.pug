@@ -1,32 +1,32 @@
 +b.SECTION.filters
 	.wrap
-		+e.wrap
-			+e.item
-				+e.A.popup.js-modal(href='#checkboxs')
+		+e.wrap.flex
+			+e.item._small.flex
+				+e.A.popup.flex.js-modal(href='#checkboxs')
 					span Фильтры
 					+icon('filtersPopup')
-			+e.item
-				+e.A.popup.js-modal(href='#brands')
+			+e.item._small.flex
+				+e.A.popup.flex.js-modal(href='#brands')
 					span Бренды
 					+icon('filtersPopup')
-			+e.item._price
-				+e.price
-					+b.price(id='price')
-					+e.price-item
-						+e.SPAN.price-before от
+			+e.item._price._big.flex
+				+b.price
+					+e.range(id='price')
+					+e.item
+						+e.SPAN.item-before от
 						input(type="number" id='price1')
-						+e.SPAN.price-currency $							
-					+e.price-item
-						+e.SPAN.price-before до
+						+e.SPAN.item-currency $							
+					+e.item
+						+e.SPAN.item-before до
 						input(type="number" id='price2')
-						+e.SPAN.price-currency $
-			+e.item._currencyes
-				+e.currencyes
-					+e.currency._active $ (US)
-					+e.currency ₽ (RU)
-					+e.currency € (EUR)
-			+e.item
-				+e.A.popup.js-modal(href='#sort')
+						+e.SPAN.item-currency $
+			+e.item._currencyes._big.flex
+				+b.currencyes.flex
+					+e.item._active.flex._vertical(data-currency='$') $ (US)
+					+e.item.flex._vertical(data-currency='₽') ₽ (RU)
+					+e.item.flex._vertical(data-currency='€') € (EUR)
+			+e.item._small.flex
+				+e.A.popup.flex.js-modal(href='#sort')
 					span Сначала новые
 					+icon('filtersPopup')
 

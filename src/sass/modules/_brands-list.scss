@@ -9,14 +9,9 @@
 		margin-bottom: 5rem;
 		z-index: -1;
 	}
-	&__lists {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-	}
 
 	&__list {
-		margin-right: 5rem;
+		margin-right: 3rem;
 		@include max-screen($large-tablet) {
 			width: 50%;
 			margin-right: 0px;
@@ -47,7 +42,6 @@
 
 	&__btns {
 		margin-top: 5rem;
-		display: flex;
 		font-size: 1.2rem;
 		.btn {
 			font-size: 1.2rem;
@@ -67,8 +61,6 @@
 		font-weight: 600;
 		padding: 2rem 4.5rem;
 		cursor: pointer;
-		display: flex;
-		align-items: center;
 		transition: opacity 0.3s;
 		&:hover {
 			opacity: 0.7;

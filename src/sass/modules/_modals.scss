@@ -18,6 +18,12 @@
 		width: calc( 45rem + 10rem * 2 );
 	}
 
+	&_brands {
+		@include max-screen($small-tablet) {
+			padding: 5rem 6px;
+		}
+	}
+
 	&_privacy {
 		width: calc( 85rem + 10rem * 2 );
 	}
