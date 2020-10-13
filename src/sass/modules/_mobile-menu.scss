@@ -12,8 +12,12 @@
 		line-height: 140%; 
 		letter-spacing: -0.02em;
 		margin-bottom: 1.5rem;
+		transition: opacity 0.3s, padding 0.3s;
 		@include max-screen($small_tablet) {
 			font-size: 1.8rem;
+		}
+		&:hover {
+			opacity: 0.7;
 		}
 	}
 }

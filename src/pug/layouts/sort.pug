@@ -1,0 +1,24 @@
++b.checkboxs
+	.wrap
+		+e.lists
+			+e.list
+				+e.list-title Сортировка товара
+				+e.item._active
+					+e.item-check
+						+icon('check')
+					span Сначала новые
+				+e.item
+					+e.item-check
+						+icon('check')
+					span По цене вниз
+				+e.item
+					+e.item-check
+						+icon('check')
+					span По цене вниз
+				+e.item
+					+e.item-check
+						+icon('check')
+					span По акциям
+		+e.btns
+			+btn({text:'Применить'}).btn_empty.btn_black.close.js-close-modal
+			+e.throw Сбросить

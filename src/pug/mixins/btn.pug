@@ -7,7 +7,7 @@ mixin btn(params)
 			if params.icon == 'plus'
 				+e.__plus.flex._vertical._center
 				+e.round
-			| #{params.text}
+			+e.SPAN.text #{params.text}
 
 	else if params.type == 'label'
 		+b.LABEL.btn(class!=attributes.class for!=attributes.for) 
@@ -17,7 +17,7 @@ mixin btn(params)
 			if params.icon == 'plus'
 				+e.__plus.flex._vertical._center
 				+e.round
-			| #{params.text}
+			+e.SPAN.text #{params.text}
 
 	else  
 		+b.BUTTON.btn(href!=attributes.href)(class!=attributes.class) 
@@ -27,4 +27,4 @@ mixin btn(params)
 			if params.icon == 'plus'
 				+e.__plus.flex._vertical._center
 				+e.round
-			| #{params.text}
+			+e.SPAN.text #{params.text}

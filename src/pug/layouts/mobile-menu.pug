@@ -1,9 +1,9 @@
 +b.mobile-menu
 	.wrap
-		+e.list
-			+e.A.link(href='/main.html') Главная
-			+e.A.link(href='/catalog.html') Каталог
-			+e.A.link(href='#') Выкуп
-			+e.A.link(href='#') Онлайн-оценка
-			+e.A.link(href='#') Наш центр
-			+e.A.link(href='#') Контакты
+		+e.list.anchors
+			+e.A.link(href='/main.html' data-anchors='false') Главная
+			+e.A.link(href='/catalog.html' data-anchors='false') Каталог
+			+e.A.link.close.js-close-modal(href='estimate') Выкуп
+			+e.A.link.close.js-close-modal(href='estimate') Онлайн-оценка
+			+e.A.link.close.js-close-modal(href='about') Наш центр
+			+e.A.link.close.js-close-modal(href='contacts') Контакты

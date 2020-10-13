@@ -1,7 +1,12 @@
 .tags {
-	margin: 2rem 0px;
-	margin-bottom: 1rem;
-	
+	margin-top: 2rem;
+	@include max-screen($large-tablet) {
+		margin-top: 4rem;
+	}
+
+	@include max-screen($small-tablet) {
+		margin-top: 2rem;
+	}
 	&__list {
 		display: flex;
 	}
@@ -15,6 +20,10 @@
 		margin-bottom: 1.5rem;
 		display: flex;
 		align-items: center;
+		cursor: pointer;
+		&:hover {
+			opacity: 0.8;
+		}
 		&-close {
 			width: 1.2rem;
 			height: 1.2rem;
@@ -54,10 +63,21 @@
 		display: flex;
 		align-items: center;
 		margin-bottom: 1.5rem;
+		cursor: pointer;
+		transition: background 0.3s, color 0.3s;
+
 		svg {
 			width: 1.2rem;
 			height: 1.2rem;
 			margin-left: 1rem;
+			transition: fill 0.3s;
+		}
+		&:hover {
+			background: $primary;
+			color: #fff;
+			svg {
+				fill: #fff;
+			}
 		}
 	}
 

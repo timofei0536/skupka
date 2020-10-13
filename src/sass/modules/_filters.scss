@@ -1,46 +1,66 @@
 .filters {
 	&__wrap {
 		border: 1px solid rgba(196,196,196,0.5);
-		height: 6rem;
 		display: flex;
+		@include max-screen($large-tablet) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__item {
+		min-height: 6rem;
 		border-right: 1px solid rgba(196,196,196,0.5);
 		white-space: nowrap;
-		
+		@include max-screen($large-tablet) {
+			width: calc( 100% / 3 );
+		}
+		@include max-screen($small_tablet) {
+			width: auto;
+			flex-grow: 1;
+			max-width: 30%;
+			min-height: 5rem;
+		}
 		&:last-child {
 			border: none;
+			@include max-screen($small-tablet) {
+				max-width: 40%;
+			}
 		}
 		display: flex;
 		&_currencyes {
 			position: relative;
+			@include max-screen($large-tablet) {
+				order: 2;
+				width: 40%;
+				border-top: 1px solid rgba(196,196,196,0.5);
+				border-right: none;
+			}
+			@include max-screen($small-tablet) {
+				max-width: 100% !important;
+			}
 		}
 
 		&_price {
+			@include max-screen($large-tablet) {
+				order: 1;
+				width: 60%;
+				border-top: 1px solid rgba(196,196,196,0.5);
+			}
+			@include max-screen($small-tablet) {
+				max-width: 100% !important;
+			}
 			position: relative;
-			background: #ccc;
 			flex-grow: 1;
-			max-width: 26rem;
+			// max-width: 26rem;
 			&::before {
 				content: '';
 				position: absolute;
 				z-index: 2;
-				right: 0px;
 				height: 60%;
 				left: 50%;
 				top: 20%;
 				width: 1px;
 				background: rgba(196,196,196,0.5);
-			}
-			input {
-				width: 50%;
-				border: none;
-				text-align: center;
-				font-weight: 500;
-				font-size: 1.4rem;
-				letter-spacing: -0.02em;
-				color: rgba(17, 17, 17, 0.5);
 			}
 		}
 	}
@@ -49,16 +69,27 @@
 		flex-grow: 1;
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		font-weight: 600;
 		font-size: 1.6rem;
 		letter-spacing: -0.02em;
 		padding: 0px 4rem;
-		
+		@include max-screen($small_tablet) {
+			padding: 0px 1.5rem;
+			font-size: 1.2rem;
+		}
+		&:hover {
+			opacity: 0.8;
+		}
 		svg {
 			width: 1rem;
 			opacity: 1;
 			margin-left: 1rem;
 			flex-shrink: 0;
+			@include max-screen($large-tablet) {
+				margin-left: 0.5rem;
+				width: 0.8rem;
+			}
 		}
 	}
 
@@ -66,6 +97,9 @@
 		display: flex;
 		flex-grow: 1;
 		padding: 0rem 3rem;
+		@include max-screen($small-tablet) {
+			padding: 0px;
+		}
 	}
 
 	&__currency {
@@ -79,6 +113,12 @@
 		position: relative;
 		padding: 0px 0.5rem;
 		justify-content: center;
+		transition: all 0.3s;
+		@include max-screen($small-tablet) {
+			margin: 0px 0.5rem;
+			font-size: 1rem;
+			padding: 0px;
+		}
 		&_active {
 			opacity: 1;
 			&::before {
@@ -91,5 +131,41 @@
 				background: $black;
 			}
 		}
+
+		&:hover {
+			opacity: 1;;
+		}
+	}
+
+	&__price {
+		display: flex;
+		width: 100%;
+		&-item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: 500;
+			letter-spacing: -0.02em;
+			font-size: 1.4rem;
+			width: 50%;
+			@include max-screen($small-tablet) {
+				font-size: 1.2rem;
+			}
+			input {
+				border: none;
+				text-align: center;
+				font-size: 1.4rem;
+				width: 6rem;
+				color: rgba(17, 17, 17, 0.5);
+				@include max-screen($small-tablet) {
+					font-size: 1.2rem;
+				}
+			}
+
+		}
+		&-currency {
+			color: rgba(17, 17, 17, 0.5);
+		}
+
 	}
 }

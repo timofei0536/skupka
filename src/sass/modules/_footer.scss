@@ -22,10 +22,38 @@
 	}
 
 	&__conf {
-		.footer_home & {
-			text-decoration: underline;
-			margin-bottom: 2.8rem;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0px;
+			bottom: 2px;
+			width: 0%;
+			height: 1px;
+			background: $black;
+			opacity: 0;
+			transition: all 0.5s;
 		}
+		&:hover {
+			&::before {
+				width: 100%;		
+				opacity: 0.9;
+			}	
+		}
+		.footer_home & {
+			cursor: pointer;
+			position: relative;
+			margin-bottom: 2.8rem;
+			&::before {
+				width: 100%;
+				opacity: 0.9;
+			}
+			&:hover::before {
+				width: 0%;
+				opacity: 0;
+			}
+		}
+
 
 	}
 

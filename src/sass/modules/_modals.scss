@@ -44,7 +44,7 @@
 		}
 	}
 	&_purple {
-		background: $primary;
+		background: $primary url('/img/menu__lines.png') no-repeat;
 		color: #fff;
 	}
 
@@ -74,6 +74,9 @@
 
 		&::before {
 			transform: rotate(-45deg);
+		}
+		&:hover {
+			opacity: 0.7;
 		}
 	}
 }

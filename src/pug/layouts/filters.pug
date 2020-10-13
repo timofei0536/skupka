@@ -10,17 +10,23 @@
 					span Бренды
 					+icon('filtersPopup')
 			+e.item._price
-				+b.price(id='price')
-				input(type="text" id='price1')
-				input(type="text" id='price2')
+				+e.price
+					+b.price(id='price')
+					+e.price-item
+						+e.SPAN.price-before от
+						input(type="number" id='price1')
+						+e.SPAN.price-currency $							
+					+e.price-item
+						+e.SPAN.price-before до
+						input(type="number" id='price2')
+						+e.SPAN.price-currency $
 			+e.item._currencyes
 				+e.currencyes
 					+e.currency._active $ (US)
 					+e.currency ₽ (RU)
 					+e.currency € (EUR)
 			+e.item
-				//- +e.A.popup.js-modal(href='#flters')
-				+e.SPAN.popup
+				+e.A.popup.js-modal(href='#sort')
 					span Сначала новые
 					+icon('filtersPopup')
 

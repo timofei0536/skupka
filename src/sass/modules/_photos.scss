@@ -22,7 +22,10 @@
 
 		&_close {
 			position: relative;
-			&::before {
+			cursor: pointer;
+			transition: background 0.3s;
+			&::before,
+			&::after { 
 				content: '';
 				position: absolute;
 				width: 2px;
@@ -30,18 +33,23 @@
 				background: #929292;
 				top: calc( 50% - 0.6rem );
 				left: 50%;
-				transform: rotate(45deg);
+				transition: background 0.3s;
+			}
+
+			&::before {
+				transform: rotate(-45deg);
 			}
 
 			&::after {
-				content: '';
-				position: absolute;
-				width: 2px;
-				height: 1.2rem;
+				transform: rotate(45deg);
+			}
+
+			&:hover {
 				background: #929292;
-				top: calc( 50% - 0.6rem );
-				left: 50%;
-				transform: rotate(-45deg);
+				&::before,
+				&::after {
+					background: $gray;
+				}
 			}
 		}
 	}

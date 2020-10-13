@@ -8,6 +8,25 @@
 	white-space: nowrap;
 	flex-wrap: nowrap;
 	width: 100%;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		top: calc( 50% - 1.5rem );
+		left: 50%;
+		height: 3rem;
+		width: 1px;
+		background: rgba(255, 255, 255, 0.2);
+		transition: all 0.5s;
+	}
+
+	&:hover {
+		&::before {
+			height: 100%;
+			top: 0px;
+		}
+	}
+
 	@include max-screen($small_tablet) {
 		line-height: 8rem;
 		font-size: 1.3rem;
@@ -17,15 +36,33 @@
 		cursor: pointer;
 		padding: 0px 1rem;
 		position: relative;
-		&:nth-child(1) {
+		overflow: hidden;
+		&:hover {
+			.double-btn__icon{
+				margin-left: 0.5rem;
+				&::before {
+					width: 400px;
+					height: 400px;
+				}
+			}
+
+			&::before {
+				width: 101% !important;
+				opacity: 1 !important;
+			}
+		}
+
+		&:not(.double-btn__link_icon) {
 			&::before {
 				content: '';
 				position: absolute;
-				top: calc( 50% - 1.5rem );
-				right: 0px;
-				height: 3rem;
+				top: 0px;
+				height: 100%;
 				width: 1px;
 				background: rgba(255, 255, 255, 0.2);
+				transition: all 0.5s;
+				right: -2px;
+				opacity: 0;
 			}
 		}
 	}
@@ -33,9 +70,10 @@
 	&__icon {
 		width: 6.4rem;
 		height: 6.4rem;	
-		background: rgba(255,255,255,0.1);
 		border-radius: 50%;
 		margin-left: 2.5rem;
+		position: relative;
+		transition: all 0.25s;
 		@include max-screen($small_tablet) {
 			width: 5rem;
 			height: 5rem;
@@ -45,6 +83,19 @@
 			height: 2.5rem;
 			stroke: #fff;
 			stroke-width: 2;
+		}
+
+		&::before {
+			background: rgba(255,255,255,0.1);
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			border-radius: 50%;
+			transition: all 0.8s;
 		}
 	}
 }

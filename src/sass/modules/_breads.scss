@@ -34,11 +34,13 @@
 			border-radius: 50%;
 			background: $black;
 			margin-right: 1.5rem;
+			transition: background 0.2s, margin-right 0.2s 0.1s;
 			svg {
 				width: 1.2rem;
 				height: 1.2rem;
 				stroke: #fff;
 				stroke-width: 2;
+				transition: all 0.3s;
 			}
 			@include max-screen($small_tablet) {
 				width: 3rem;
@@ -49,6 +51,16 @@
 				}
 			}
 		}
+
+		&:hover {
+			div {
+				background: #fff;
+				margin-right: 1rem;
+			}
+			svg {
+				stroke: $black;
+			}
+		}
 	}
 
 	&__sep {
@@ -56,8 +68,12 @@
 	}
 
 	&__link {
+		transition: color 0.3s;
+		&:hover {
+			color: $black;
+		}
 		&_active {
-			cursor: initial;
+			pointer-events: none;
 		}
 	}
 }

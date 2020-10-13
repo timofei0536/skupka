@@ -37,10 +37,15 @@
 		display: none;
 	}
 	&__name {
+		display: block;
 		h3 {
 			font-weight: 500;
 			font-size: 1.7rem;
 			margin-bottom: 0.7rem;
+		}
+		transition: opacity 0.2s;
+		&:hover {
+			opacity: 0.75;
 		}
 	}
 
@@ -63,6 +68,10 @@
 		position: relative;
 		width: 100%;
 		display: block;
+		transition: opacity 0.2s;
+		&:hover {
+			opacity: 0.75;
+		}
 		&-ratio {
 			padding-bottom: 304 / 276 * 100%;
 			display: block;

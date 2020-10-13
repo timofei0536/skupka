@@ -11,6 +11,11 @@
 			.switch {
 				flex-wrap: nowrap;
 				margin: 0rem 0.2rem;
+				@include max-screen($small-tablet) {
+					white-space: nowrap;
+					justify-content: space-between;
+					width: 100%;
+				}
 				&__item {
 					width: calc( ( 100% - 9rem ) / 2 );
 					font-size: 1.4rem;
@@ -37,7 +42,8 @@
 		text-transform: uppercase;
 		font-weight: 400;
 		@include max-screen($small_tablet) {
-			font-size: 5.3rem;
+			margin-bottom: 1rem;
+			font-size: 4.5rem;
 		}
 	}
 

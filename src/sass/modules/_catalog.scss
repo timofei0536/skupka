@@ -1,5 +1,11 @@
 .catalog {
 	margin: 15rem 0px;
+	&--shop {
+		margin-top: 8rem;
+		@include max-screen($small-tablet) {
+			margin-top: 2rem !important;
+		}
+	}
 	@include max-screen($small_tablet) {
 		margin: 8rem 0px;
 	}
