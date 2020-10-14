@@ -5,50 +5,62 @@ mixin brands-list(params)
 				+e.title Списко брендов,<br> с которыми мы<br> работаем
 			+e.lists.flex._justify
 				+e.list
-					+e.link._active A. Lange and Sohne
-					+e.link B.R.M.
-					+e.link Blancpain
-					+e.link BOUCHERON
-					+e.link Bovet
-					+e.link Breguet
-					+e.link Breitling
-					+e.link Bulgari
-					+e.link Cartier
-					+e.link Bulgari
-					+e.link Arnold & Son
-					+e.link Audemars Piguet
+					+e.LABEL.link._active A. Lange and Sohne
+						input(name='brands[]' id='xxx' type='hidden' value='brand1')
+					+e.LABEL.link B.R.M.
+						input(name='brands[]' type='hidden' value='brand2')
+					+e.LABEL.link Blancpain
+						input(name='brands[]' type='hidden' value='brand3')
+					+e.LABEL.link BOUCHERON
+						input(name='brands[]' type='hidden' value='brand4')
+					+e.LABEL.link Bovet
+						input(name='brands[]' type='hidden' value='brand5')
+					+e.LABEL.link Breguet
+						input(name='brands[]' type='hidden' value='brand6')
+					+e.LABEL.link Breitling
+						input(name='brands[]' type='hidden' value='brand7')
+					+e.LABEL.link Bulgari
+						input(name='brands[]' type='hidden' value='brand8')
+					+e.LABEL.link Cartier
+						input(name='brands[]' type='hidden' value='brand9')
+					+e.LABEL.link Bulgari
+						input(name='brands[]' type='hidden' value='brand10')
+					+e.LABEL.link Arnold & Son
+						input(name='brands[]' type='hidden' value='brand11')
+					+e.LABEL.link Audemars Piguet
+						input(name='brands[]' type='hidden' value='brand12')
 				+e.list
-					+e.link Cvstos
-					+e.link DAMIANI
-					+e.link Daniel Roth
-					+e.link De Bethune
-					+e.link de Grisogono
-					+e.link F.P. Journe
-					+e.link Franck Muller
-					+e.link Gerald Genta
-					+e.link Girard-Perregaux
-					+e.link Glashütte Original
-					+e.link Graff
+					+e.LABEL.link Cvstos
+					+e.LABEL.link DAMIANI
+					+e.LABEL.link Daniel Roth
+					+e.LABEL.link De Bethune
+					+e.LABEL.link de Grisogono
+					+e.LABEL.link F.P. Journe
+					+e.LABEL.link Franck Muller
+					+e.LABEL.link Gerald Genta
+					+e.LABEL.link Girard-Perregaux
+					+e.LABEL.link Glashütte Original
+					+e.LABEL.link Graff
 				+e.list
-					+e.link Jaeger LeCoultre
-					+e.link Jaquet Droz
-					+e.link JORG HYSEK
-					+e.link LOUIS MOINET
-					+e.link Maurice Lacroix
-					+e.link OMEGA
-					+e.link Panerai
-					+e.link Parmigiani
-					+e.link Patek Philippe
-					+e.link Piaget
-					+e.link Graham
+					+e.LABEL.link Jaeger LeCoultre
+					+e.LABEL.link Jaquet Droz
+					+e.LABEL.link JORG HYSEK
+					+e.LABEL.link LOUIS MOINET
+					+e.LABEL.link Maurice Lacroix
+					+e.LABEL.link OMEGA
+					+e.LABEL.link Panerai
+					+e.LABEL.link Parmigiani
+					+e.LABEL.link Patek Philippe
+					+e.LABEL.link Piaget
+					+e.LABEL.link Graham
 				+e.list
-					+e.link TAG Heuer
-					+e.link TUDOR
-					+e.link Romain Jerome
-					+e.link Ulysse Nardin
-					+e.link Urwerk
-					+e.link Vacheron Constantin
-					+e.link Zenith
+					+e.LABEL.link TAG Heuer
+					+e.LABEL.link TUDOR
+					+e.LABEL.link Romain Jerome
+					+e.LABEL.link Ulysse Nardin
+					+e.LABEL.link Urwerk
+					+e.LABEL.link Vacheron Constantin
+					+e.LABEL.link Zenith
 			+e.btns.flex
 				if params.filters
 					+btn({text:'Применить'}).btn_empty.btn_black.close.js-close-modal

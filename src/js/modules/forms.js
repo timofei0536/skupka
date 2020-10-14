@@ -10,6 +10,7 @@ var forms = {
 			mask: "+7 (999) 999-99-99",
 			clearMaskOnLostFocus: true,
 			clearIncomplete: true,
+			showMaskOnHover: false,
 		});
 
 		im.mask(selector);

@@ -3,22 +3,26 @@
 		+e.lists.flex._justify
 			+e.list
 				+e.list-title Сортировка товара
-				+e.item.flex._vertical._active
+				+e.LABEL.item.flex._vertical._active
 					+e.item-check
 						+icon('check')
 					span Сначала новые
-				+e.item.flex._vertical
+					input(type='checkbox' name='sort[]' value='sort1')
+				+e.LABEL.item.flex._vertical
 					+e.item-check
 						+icon('check')
 					span По цене вниз
-				+e.item.flex._vertical
+					input(type='checkbox' name='sort[]' value='sort2')
+				+e.LABEL.item.flex._vertical
 					+e.item-check
 						+icon('check')
 					span По цене вниз
-				+e.item.flex._vertical
+					input(type='checkbox' name='sort[]' value='sort3')
+				+e.LABEL.item.flex._vertical
 					+e.item-check
 						+icon('check')
 					span По акциям
+					input(type='checkbox' name='sort[]' value='sort4')
 		+e.btns.flex
 			+btn({text:'Применить'}).btn_empty.btn_black.close.js-close-modal
 			+e.throw.flex._vertical Сбросить
